@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meus Lembretes — Care Plus</title>
+  <link rel="stylesheet" href="../css/navbar.css" />
+  <link rel="stylesheet" href="../css/lembretes.css" />
+</head>
+<body>
+
+<div id="navbar-container"></div>
+
+<main class="page-body">
+
+  <h1 class="page-title">Meus Lembretes</h1>
+
+  <div class="tab-row">
+    <button class="tab tab-active" data-tab="proximas">Próximas consultas</button>
+    <button class="tab tab-inactive" data-tab="historico">Histórico</button>
+  </div>
+
+  <div class="section-row">
+    <span class="section-title" id="section-label">Consultas agendadas</span>
+    <span class="ver-todas">Ver todas</span>
+  </div>
+
+  <div id="lista-lembretes"></div>
+
+</main>
+
+<script src="../js/navbar.js"></script>
+<script src="../js/lembretes.js"></script>
+</body>
+</html>
