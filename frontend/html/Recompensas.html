@@ -1,90 +1,92 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Recompensas - Care Plus</title>
-  <link rel="stylesheet" href="../css/navbar.css">
-  <link rel="stylesheet" href="../css/Recompensas.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarePlus - Recompensas</title>
+    <link rel="stylesheet" href="../css/Recompensas.css">
 </head>
 <body>
-  <!-- Navbar já existente -->
-  <div id="navbar-container"></div>
+    <main class="main-content">
+        <!-- Box de saldo -->
+        <section class="saldo-section">
+            <div class="saldo-box">
+                <img src="../imagens/Care Coins.png" alt="Care Coins" class="saldo-coin">
+                <div class="saldo-info">
+                    <span class="saldo-label">Seu saldo:</span>
+                    <span class="saldo-value">899</span>
+                    <span class="saldo-moeda">Care Points</span>
+                </div>
+            </div>
+        </section>
 
-  <main class="main-content">
-    <h1 class="page-title">Portal de Recompensas</h1>
-    <section class="saldo-section">
-      <div class="saldo-box">
-        <img src="../imagens/Care Coins.png" alt="Care Coins" class="saldo-coin">
-        <div class="saldo-info">
-          <span class="saldo-label">Seu saldo:</span>
-          <span class="saldo-value">899</span>
-          <span class="saldo-moeda">Care Points</span>
-        </div>
-      </div>
-    </section>
+        <!-- Destaques -->
+        <section class="destaques-section">
+            <h2 class="destaques-title">Destaques</h2>
+            <div class="carousel-wrapper">
+                <button class="carousel-btn left" aria-label="Anterior">&#8592;</button>
+                <div class="cards-carousel">
+                    <!-- Card 1 -->
+                    <div class="reward-card">
+                        <div class="card-img-box"><img src="../imagens/Café Expresso.png" alt="Café Expresso" class="reward-img"></div>
+                        <span class="reward-name">Café Expresso</span>
+                        <div class="reward-footer">
+                            <img src="../imagens/Care Coins.png" alt="Care Coins" class="coin-icon-card">
+                            <span class="reward-value">10</span>
+                            <button class="btn-resgatar">Resgatar</button>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="reward-card">
+                        <div class="card-img-box"><img src="../imagens/Pao de Queijo.png" alt="Pão de Queijo" class="reward-img"></div>
+                        <span class="reward-name">Pão de Queijo</span>
+                        <div class="reward-footer">
+                            <img src="../imagens/Care Coins.png" alt="Care Coins" class="coin-icon-card">
+                            <span class="reward-value">10</span>
+                            <button class="btn-resgatar">Resgatar</button>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="reward-card">
+                        <div class="card-img-box"><img src="../imagens/Torta de Frango.png" alt="Torta de Frango" class="reward-img"></div>
+                        <span class="reward-name">Torta de Frango</span>
+                        <div class="reward-footer">
+                            <img src="../imagens/Care Coins.png" alt="Care Coins" class="coin-icon-card">
+                            <span class="reward-value">20</span>
+                            <button class="btn-resgatar">Resgatar</button>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="reward-card">
+                        <div class="card-img-box"><img src="../imagens/Bolo de Chocolate.png" alt="Bolo de Chocolate" class="reward-img"></div>
+                        <span class="reward-name">Bolo de Chocolate</span>
+                        <div class="reward-footer">
+                            <img src="../imagens/Care Coins.png" alt="Care Coins" class="coin-icon-card">
+                            <span class="reward-value">30</span>
+                            <button class="btn-resgatar">Resgatar</button>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="reward-card">
+                        <div class="card-img-box"><img src="../imagens/Hamburguer + Coca.png" alt="Hamburguer + Coca Cola" class="reward-img"></div>
+                        <span class="reward-name">Hamburguer + Coca Cola</span>
+                        <div class="reward-footer">
+                            <img src="../imagens/Care Coins.png" alt="Care Coins" class="coin-icon-card">
+                            <span class="reward-value">50</span>
+                            <button class="btn-resgatar">Resgatar</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn right" aria-label="Próximo">&#8594;</button>
+            </div>
+            <div class="carousel-indicator"><span class="indicator-circle"></span></div>
+        </section>
 
-    <section class="destaques-section">
-      <h2 class="destaques-title">Destaques</h2>
-      <div class="cards-grid">
-        <div class="reward-card">
-          <div class="card-img-box">
-            <img src="../imagens/Café Expresso.png" alt="Café Expresso" class="reward-img">
-          </div>
-          <span class="reward-name">Café Expresso</span>
-          <div class="reward-footer">
-            <img src="../imagens/Care Coins.png" alt="Care Coins" class="coin-icon-card">
-            <span class="reward-value">10</span>
-            <button class="btn-resgatar">Resgatar</button>
-          </div>
-        </div>
-        <div class="reward-card">
-          <div class="card-img-box">
-            <img src="../imagens/Pao de Queijo.png" alt="Pão de Queijo" class="reward-img">
-          </div>
-          <span class="reward-name">Pão de Queijo</span>
-          <div class="reward-footer">
-            <img src="../imagens/Care Coins.png" alt="Care Coins" class="coin-icon-card">
-            <span class="reward-value">10</span>
-            <button class="btn-resgatar">Resgatar</button>
-          </div>
-        </div>
-        <div class="reward-card">
-          <div class="card-img-box">
-            <img src="../imagens/Torta de Frango.png" alt="Torta de Frango" class="reward-img">
-          </div>
-          <span class="reward-name">Torta de Frango</span>
-          <div class="reward-footer">
-            <img src="../imagens/Care Coins.png" alt="Care Coins" class="coin-icon-card">
-            <span class="reward-value">20</span>
-            <button class="btn-resgatar">Resgatar</button>
-          </div>
-        </div>
-        <div class="reward-card">
-          <div class="card-img-box">
-            <img src="../imagens/Bolo de Chocolate.png" alt="Bolo de Chocolate" class="reward-img">
-          </div>
-          <span class="reward-name">Bolo de Chocolate</span>
-          <div class="reward-footer">
-            <img src="../imagens/Care Coins.png" alt="Care Coins" class="coin-icon-card">
-            <span class="reward-value">30</span>
-            <button class="btn-resgatar">Resgatar</button>
-          </div>
-        </div>
-        <div class="reward-card">
-          <div class="card-img-box">
-            <img src="../imagens/Hamburguer + Coca.png" alt="Hamburguer + Coca Cola" class="reward-img">
-          </div>
-          <span class="reward-name">Hamburguer + Coca Cola</span>
-          <div class="reward-footer">
-            <img src="../imagens/Care Coins.png" alt="Care Coins" class="coin-icon-card">
-            <span class="reward-value">50</span>
-            <button class="btn-resgatar">Resgatar</button>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+        <!-- Café da manhã -->
+        <section class="breakfast-section">
+            <h2 class="breakfast-title">Café da manhã</h2>
+            <div class="down-indicator">&#8595;</div>
+        </section>
+    </main>
 </body>
 </html>
-
