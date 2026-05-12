@@ -195,6 +195,7 @@ body {
     display: flex;
     gap: 16px;
     margin-top: 40px;
+    margin-bottom: 50px; /* Added spacing here */
 }
 
 .btn-primary {
@@ -273,8 +274,8 @@ body {
 }
 
 .card img {
-    width: 110px;
-    height: 110px;
+    width: 120px; /* Slightly increased image size */
+    height: 120px; /* Slightly increased image size */
     object-fit: contain;
     margin: 0 auto 16px;
     background: linear-gradient(135deg, #f0f6ff 0%, #e8f1f8 100%);
@@ -307,7 +308,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 6px; /* Reduced gap for icon and text */
     background: linear-gradient(135deg, #f0f6ff 0%, #e8f1f8 100%);
     color: #003b7a;
     padding: 8px 14px;
@@ -317,14 +318,27 @@ body {
     border: 1px solid rgba(0, 59, 122, 0.1);
 }
 
-.moedas::before {
+.moedas img { /* Styling for the Care Coins icon */
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background: none; /* Remove background */
+    border-radius: 0; /* Remove border-radius */
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* Removed the ::before pseudo-element as img tag is now used directly */
+/* .moedas::before {
     content: "";
     display: inline-block;
     width: 42px;
     height: 42px;
     background: url("../imagens/Cancelamento/Care Coins.jpg") center/contain no-repeat;
     flex-shrink: 0;
-}
+} */
 
 .btn-resgatar {
     background: linear-gradient(135deg, #003b7a 0%, #002a55 100%);
@@ -343,6 +357,7 @@ body {
 .btn-resgatar:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(0, 59, 122, 0.25);
+    background: linear-gradient(135deg, #004a99 0%, #003b7a 100%); /* Enhanced hover effect */
 }
 
 /* PAGE BODY */
@@ -413,6 +428,7 @@ body {
         flex-direction: column;
         gap: 12px;
         margin-top: 30px;
+        margin-bottom: 40px; /* Adjusted for smaller screens */
     }
 
     .btn-primary, .btn-secondary {
@@ -467,6 +483,7 @@ body {
 
     .botoes {
         gap: 10px;
+        margin-bottom: 30px; /* Adjusted for smaller screens */
     }
 
     .btn-primary, .btn-secondary {
