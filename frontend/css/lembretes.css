@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background: #eef4fb;
+  min-height: 100vh;
+}
+
+.page-body {
+  padding: 32px 48px;
+}
+
+.page-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a2e4a;
+  margin-bottom: 20px;
+}
+
+.tab-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.tab {
+  border-radius: 20px;
+  padding: 6px 22px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 2px solid #1a2e4a;
+  transition: background 0.2s, color 0.2s;
+}
+
+.tab-active {
+  background: #1a2e4a;
+  color: #fff;
+}
+
+.tab-inactive {
+  background: transparent;
+  color: #1a2e4a;
+}
+
+.section-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a2e4a;
+}
+
+.ver-todas {
+  font-size: 14px;
+  color: #0066cc;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.consulta-card {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #dde8f4;
+  padding: 20px 24px;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.card-icone {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 24px;
+}
+
+.icone-blue   { background: #daeefb; }
+.icone-red    { background: #fde0e0; }
+.icone-gray   { background: #e8eef5; }
+.icone-green  { background: #d4f0e0; }
+.icone-orange { background: #fde8cc; }
+
+.card-body {
+  flex: 1;
+}
+
+.card-titulo {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a2e4a;
+  margin-bottom: 2px;
+}
+
+.card-local {
+  font-size: 13px;
+  color: #6a7f96;
+  margin-bottom: 10px;
+}
+
+.card-data {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #1a2e4a;
+  font-weight: 600;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.card-data .separador {
+  color: #6a7f96;
+  font-weight: 400;
+}
+
+.badge {
+  border-radius: 20px;
+  padding: 3px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 6px;
+}
+
+.badge-blue   { background: #daeefb; color: #0066cc; }
+.badge-orange { background: #fde8cc; color: #b25800; }
+.badge-green  { background: #d4f0e0; color: #1a7a45; }
+.badge-gray   { background: #e0e8f0; color: #4a6080; }
+
+.card-acoes {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-confirmar {
+  background: #1a2e4a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-confirmar:hover {
+  background: #0d1e33;
+}
+
+.btn-reagendar,
+.btn-cancelar {
+  background: transparent;
+  color: #1a2e4a;
+  border: 2px solid #c8d8ea;
+  border-radius: 6px;
+  padding: 7px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-reagendar:hover,
+.btn-cancelar:hover {
+  background: #1a2e4a;
+  color: #fff;
+  border-color: #1a2e4a;
+}
+
+.lista-vazia {
+  text-align: center;
+  padding: 60px 0;
+  color: #7a9ab0;
+  font-size: 15px;
+}
+
+.lista-vazia .vazia-icone {
+  font-size: 44px;
+  display: block;
+  margin-bottom: 12px;
+}
