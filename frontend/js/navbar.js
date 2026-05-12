@@ -3,6 +3,7 @@ function initNavbar() {
   const btnDecrease = document.getElementById('font-decrease');
   const btnCancelar = document.getElementById('btn-cancelar');
   const btnHome = document.getElementById('btn-home');
+  const btnRecompensas = document.getElementById('btn-recompensas');
 
   let zoomLevel = 1;
 
@@ -33,7 +34,7 @@ function initNavbar() {
   }
 
   if (btnRecompensas) {
-    btnHome.addEventListener('click', () => {
+    btnRecompensas.addEventListener('click', () => {
       window.location.href = 'recompensas.html';
     });
   }
