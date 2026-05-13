@@ -7,7 +7,7 @@ html, body {
 }
 
 .navbar-top {
-  background: #1a2e4a;
+  background: #003366;
   padding: 0;
   height: 48px;
   position: sticky;
@@ -134,7 +134,7 @@ html, body {
 }
 
 .profile-btn:hover {
-  background-color: #0052a3;
+  background-color: #003366;
 }
 
 .navbar-bottom {
@@ -191,7 +191,7 @@ html, body {
 }
 
 .user-name {
-  color: #1a2e4a;
+  color: #003366;
   font-weight: 700;
   font-size: 16px;
 }
@@ -209,7 +209,7 @@ html, body {
 }
 
 .navbar-action {
-  color: #1a2e4a;
+  color: #003366;
   text-decoration: none;
   font-size: 14px;
   font-weight: 400;

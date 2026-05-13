@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #eef4fb;
+  background: #f8fafb;
   min-height: 100vh;
 }
 
@@ -16,7 +16,7 @@ body {
 .page-title {
   font-size: 24px;
   font-weight: 700;
-  color: #1a2e4a;
+  color: #003366;
   margin-bottom: 20px;
 }
 
@@ -32,18 +32,18 @@ body {
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
-  border: 2px solid #1a2e4a;
+  border: 2px solid #003366;
   transition: background 0.2s, color 0.2s;
 }
 
 .tab-active {
-  background: #1a2e4a;
+  background: #003366;
   color: #fff;
 }
 
 .tab-inactive {
   background: transparent;
-  color: #1a2e4a;
+  color: #003366;
 }
 
 .section-row {
@@ -56,12 +56,12 @@ body {
 .section-title {
   font-size: 18px;
   font-weight: 700;
-  color: #1a2e4a;
+  color: #003366;
 }
 
 .ver-todas {
   font-size: 14px;
-  color: #0066cc;
+  color: #003366;
   text-decoration: underline;
   cursor: pointer;
 }
@@ -101,7 +101,7 @@ body {
 .card-titulo {
   font-size: 16px;
   font-weight: 700;
-  color: #1a2e4a;
+  color: #003366;
   margin-bottom: 2px;
 }
 
@@ -116,7 +116,7 @@ body {
   align-items: center;
   gap: 6px;
   font-size: 14px;
-  color: #1a2e4a;
+  color: #003366;
   font-weight: 600;
   margin-bottom: 14px;
   flex-wrap: wrap;
@@ -135,7 +135,7 @@ body {
   margin-left: 6px;
 }
 
-.badge-blue   { background: #daeefb; color: #0066cc; }
+.badge-blue   { background: #daeefb; color: #003366; }
 .badge-orange { background: #fde8cc; color: #b25800; }
 .badge-green  { background: #d4f0e0; color: #1a7a45; }
 .badge-gray   { background: #e0e8f0; color: #4a6080; }
@@ -147,7 +147,7 @@ body {
 }
 
 .btn-confirmar {
-  background: #1a2e4a;
+  background: #003366;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -159,13 +159,13 @@ body {
 }
 
 .btn-confirmar:hover {
-  background: #0d1e33;
+  background: #003366;
 }
 
 .btn-reagendar,
 .btn-cancelar {
   background: transparent;
-  color: #1a2e4a;
+  color: #003366;
   border: 2px solid #c8d8ea;
   border-radius: 6px;
   padding: 7px 20px;
@@ -177,9 +177,9 @@ body {
 
 .btn-reagendar:hover,
 .btn-cancelar:hover {
-  background: #1a2e4a;
+  background: #003366;
   color: #fff;
-  border-color: #1a2e4a;
+  border-color: #003366;
 }
 
 .lista-vazia {

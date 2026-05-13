@@ -11,7 +11,7 @@ body {
 
 /* TOPO */
 .topo {
-    background: #003b7a;
+    background: #003366;
     color: white;
     padding: 14px 40px;
     display: flex;
@@ -32,7 +32,7 @@ body {
 }
 
 .btn-perfil {
-    background: #0066cc;
+    background: #003366;
     color: white;
     border: none;
     padding: 9px 20px;
@@ -45,12 +45,11 @@ body {
 }
 
 .btn-perfil:hover {
-    background: #0052a3;
+    background: #003366;
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(0, 102, 204, 0.35);
 }
 
-/* USER HEADER */
 .user-header {
     background: white;
     padding: 24px 40px;
@@ -67,7 +66,7 @@ body {
 }
 
 .logo {
-    background: linear-gradient(135deg, #0066cc 0%, #003b7a 100%);
+    background: linear-gradient(135deg, #003366 0%, #003366 100%);
     color: white;
     width: 56px;
     height: 56px;
@@ -106,7 +105,7 @@ body {
 }
 
 .user-info h2 {
-    color: #003b7a;
+    color: #003366;
     font-size: 17px;
     font-weight: 600;
 }
@@ -123,7 +122,7 @@ body {
 }
 
 .link {
-    color: #003b7a;
+    color: #003366;
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
@@ -131,7 +130,7 @@ body {
 }
 
 .link:hover {
-    color: #0066cc;
+    color: #003366;
 }
 
 /* CONTAINER PRINCIPAL */
@@ -149,7 +148,7 @@ body {
 }
 
 .texto h1 {
-    color: #003b7a;
+    color: #003366;
     font-size: 38px;
     margin-bottom: 32px;
     font-weight: 700;
@@ -167,7 +166,7 @@ body {
 
 .saudacao {
     font-weight: 600;
-    color: #003b7a;
+    color: #003366;
     font-size: 16px;
 }
 
@@ -184,7 +183,7 @@ body {
 }
 
 .atencao strong {
-    color: #003b7a;
+    color: #003366;
     font-weight: 600;
 }
 
@@ -196,7 +195,7 @@ body {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #003b7a 0%, #002a55 100%);
+    background: linear-gradient(135deg, #003366 0%, #003366 100%);
     color: white;
     border: none;
     padding: 14px 32px;
@@ -215,8 +214,8 @@ body {
 
 .btn-secondary {
     background: white;
-    color: #003b7a;
-    border: 2px solid #003b7a;
+    color: #003366;
+    border: 2px solid #003366;
     padding: 12px 30px;
     border-radius: 8px;
     cursor: pointer;
@@ -243,7 +242,7 @@ body {
 .section-title {
     font-size: 22px;
     font-weight: 700;
-    color: #003b7a;
+    color: #003366;
     letter-spacing: -0.3px;
 }
 
@@ -294,7 +293,7 @@ body {
 }
 
 .card h3 {
-    color: #003b7a;
+    color: #003366;
     font-size: 1.2rem; /* Increased font size */
     margin-bottom: 18px;
     font-weight: 700; /* Changed font weight */
@@ -319,7 +318,7 @@ body {
     justify-content: center;
     gap: 6px;
     background: linear-gradient(135deg, #f0f6ff 0%, #e8f1f8 100%);
-    color: #003b7a;
+    color: #003366;
     padding: 10px 16px; /* Increased padding */
     border-radius: 24px;
     font-weight: 700;
@@ -340,7 +339,7 @@ body {
 }
 
 .btn-resgatar {
-    background: #003b7a; /* Changed background */
+    background: #003366; /* Changed background */
     color: white;
     border: none;
     padding: 8px 18px; /* Adjusted padding */
@@ -357,7 +356,7 @@ body {
 .btn-resgatar:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0,59,122,0.2); /* Adjusted box-shadow */
-    background: #004a99; /* Adjusted background */
+    background: #003366; /* Adjusted background */
 }
 
 /* PAGE BODY */

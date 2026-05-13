@@ -1,8 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  background: #fff;
-  color: #003b7a;
+  background: #f8fafb;
+  color: #003366;
 }
 
 .main-content {
@@ -17,7 +17,7 @@ body {
   font-weight: 700;
   margin-top: 32px;
   margin-bottom: 18px;
-  color: #003b7a;
+  color: #003366;
   letter-spacing: 0.5px;
 }
 
@@ -47,12 +47,12 @@ body {
   gap: 2px;
 }
 .saldo-label {
-  color: #003b7a;
+  color: #003366;
   font-size: 1.1rem;
   font-weight: 500;
 }
 .saldo-value {
-  color: #003b7a;
+  color: #003366;
   font-size: 1.7rem;
   font-weight: 700;
 }
@@ -114,7 +114,7 @@ body {
 .reward-name {
   font-size: 1.15rem;
   font-weight: 700;
-  color: #003b7a;
+  color: #003366;
   margin-bottom: 18px;
   text-align: center;
 }
@@ -136,11 +136,11 @@ body {
 .reward-value {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #003b7a;
+  color: #003366;
   /* margin-right: 8px; Removed as gap handles spacing */
 }
 .btn-resgatar {
-  background: #003b7a;
+  background: #003366;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -154,7 +154,7 @@ body {
   margin-top: 10px; /* Added space between value and button */
 }
 .btn-resgatar:hover {
-  background: #004a99; /* Darker blue on hover */
+  background: #003366; /* Darker blue on hover */
   transform: translateY(-2px); /* Slight lift on hover */
   box-shadow: 0 4px 12px rgba(0,59,122,0.2); /* Enhanced shadow on hover */
 }
