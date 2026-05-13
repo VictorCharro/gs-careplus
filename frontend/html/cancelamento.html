@@ -96,6 +96,13 @@
 </main>
 
 <script src="../js/navbar.js"></script>
-<script src="../js/lembretes.js"></script>
+<script>
+    fetch('../html/navbar.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('navbar-container').innerHTML = html;
+        initNavbar();
+      });
+</script>
 </body>
 </html>
