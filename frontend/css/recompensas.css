@@ -1,0 +1,282 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #fff;
+  color: #003b7a;
+}
+
+.main-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 0 40px 0;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-top: 32px;
+  margin-bottom: 18px;
+  color: #003b7a;
+  letter-spacing: 0.5px;
+}
+
+.saldo-section {
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-bottom: 36px;
+}
+.saldo-box {
+  display: flex;
+  align-items: center;
+  background: #f3fafd;
+  border-radius: 8px;
+  padding: 18px 32px;
+  box-shadow: 0 2px 8px rgba(0,59,122,0.06);
+  width: 260px;
+  gap: 18px;
+}
+.saldo-coin {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+}
+.saldo-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.saldo-label {
+  color: #003b7a;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.saldo-value {
+  color: #003b7a;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+.saldo-moeda {
+  color: #4b5563;
+  font-size: 1rem;
+}
+
+.destaques-section {
+  margin-top: 30px;
+  margin-left: 100px;
+}
+.destaques-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px; /* Increased spacing here */
+}
+.cards-grid {
+  display: flex;
+  gap: 32px;
+  justify-content: flex-start; /* Changed to flex-start to align cards to the left */
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+  /* Removed overflow-x: auto and padding-bottom for horizontal scroll */
+}
+.reward-card {
+  background: #eaf4fa;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,59,122,0.07);
+  flex-shrink: 1; /* Allow cards to shrink if needed */
+  width: 220px; /* Set a base width for cards */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 22px 18px 18px 18px;
+  justify-content: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for hover */
+  margin-bottom: 32px; /* Add vertical spacing between wrapped cards */
+}
+.reward-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,59,122,0.15);
+}
+.card-img-box {
+  background: #2366a8;
+  border-radius: 8px;
+  width: 120px; /* Reduced size */
+  height: 100px; /* Reduced size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px; /* Reduced margin */
+  box-shadow: 0 2px 8px rgba(0,59,122,0.10);
+}
+.reward-img {
+  width: 90px; /* Reduced size */
+  height: 70px; /* Reduced size */
+  object-fit: contain;
+}
+.reward-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #003b7a;
+  margin-bottom: 18px;
+  text-align: center;
+}
+.reward-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centered items in footer */
+  gap: 5px; /* Reduced gap */
+  margin-top: auto;
+  width: 100%; /* Ensure footer takes full width for button */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens if needed */
+}
+.coin-icon-card {
+  width: 20px; /* Reduced size */
+  height: 20px; /* Reduced size */
+  object-fit: contain;
+  vertical-align: middle; /* Aligned with text */
+}
+.reward-value {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #003b7a;
+  /* margin-right: 8px; Removed as gap handles spacing */
+}
+.btn-resgatar {
+  background: #003b7a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,59,122,0.08);
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Added transition */
+  outline: none;
+  margin-top: 10px; /* Added space between value and button */
+}
+.btn-resgatar:hover {
+  background: #004a99; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow: 0 4px 12px rgba(0,59,122,0.2); /* Enhanced shadow on hover */
+}
+
+/* Media Queries - Adjusted to allow wrapping for cards */
+@media (max-width: 1200px) {
+  .main-content, .destaques-section, .saldo-section {
+    margin-left: 30px;
+  }
+  .cards-grid {
+    gap: 20px;
+  }
+  .reward-card {
+    width: 180px; /* Adjust card width */
+  }
+}
+@media (max-width: 900px) {
+  .main-content, .destaques-section, .saldo-section {
+    margin-left: 0;
+    text-align: center; /* Center align sections */
+  }
+  .saldo-box {
+    margin: 0 auto 50px auto; /* Center saldo box */
+  }
+  .cards-grid {
+    gap: 15px;
+    /* flex-wrap: wrap; Already set above */
+    /* justify-content: flex-start; Already set above */
+  }
+  .reward-card {
+    width: 160px; /* Further adjust card width */
+    padding: 18px 12px 14px 12px;
+  }
+  .card-img-box {
+    width: 100px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+  .reward-img {
+    width: 70px;
+    height: 50px;
+  }
+  .coin-icon-card {
+    width: 18px;
+    height: 18px;
+  }
+  .reward-name {
+    font-size: 1.05rem;
+    margin-bottom: 14px;
+  }
+  .reward-value {
+    font-size: 1rem;
+  }
+  .btn-resgatar {
+    padding: 7px 15px;
+    font-size: 0.9rem;
+    margin-top: 8px;
+  }
+}
+@media (max-width: 600px) {
+  .main-content {
+    padding: 0 15px 40px 15px;
+  }
+  .saldo-section, .destaques-section {
+    margin-left: 0;
+  }
+  .saldo-box {
+    width: 100%; /* Full width for saldo box */
+    padding: 15px 20px;
+    margin-bottom: 40px;
+  }
+  .saldo-coin {
+    width: 40px;
+    height: 40px;
+  }
+  .saldo-value {
+    font-size: 1.5rem;
+  }
+  .saldo-moeda {
+    font-size: 0.9rem;
+  }
+  .cards-grid {
+    gap: 10px;
+    /* flex-wrap: wrap; Already set above */
+  }
+  .reward-card {
+    width: 140px; /* Further adjust card width */
+    padding: 15px 10px 12px 10px;
+  }
+  .card-img-box {
+    width: 80px;
+    height: 60px;
+    margin-bottom: 8px;
+  }
+  .reward-img {
+    width: 60px;
+    height: 40px;
+  }
+  .coin-icon-card {
+    width: 16px;
+    height: 16px;
+  }
+  .page-title {
+    font-size: 1.8rem;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+  .destaques-title {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+  .reward-name {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  .reward-value {
+    font-size: 0.9rem;
+  }
+  .btn-resgatar {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    margin-top: 6px;
+  }
+}
