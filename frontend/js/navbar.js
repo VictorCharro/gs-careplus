@@ -4,7 +4,7 @@ function initNavbar() {
   const btnCancelar = document.getElementById('btn-cancelar');
   const btnHome = document.getElementById('btn-home');
   const btnRecompensas = document.getElementById('btn-recompensas');
-  const btnLembretes = document.getElementById('btn-lembretes');
+  const btnLembretes = document.getElementById('btn-minhas-consultas');
 
   let zoomLevel = 1;
 
@@ -42,7 +42,7 @@ function initNavbar() {
 
   if (btnLembretes) {
     btnLembretes.addEventListener('click', () => {
-      window.location.href = 'lembretes.html';
+      window.location.href = 'minhas-consultas.html';
     });
   }
 
@@ -52,7 +52,7 @@ function initNavbar() {
     btnCancelar.classList.add('navbar-action-bold');
   } else if (currentPage === 'recompensas.html' && btnRecompensas) {
     btnRecompensas.classList.add('navbar-action-bold');
-  } else if (currentPage === 'lembretes.html' && btnLembretes) {
+  } else if (currentPage === 'minhas-consultas.html' && btnLembretes) {
     btnLembretes.classList.add('navbar-action-bold');
   }
 }
