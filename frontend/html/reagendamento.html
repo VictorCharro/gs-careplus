@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reagendar Consulta — Care Plus</title>
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/reagendamento.css" />
+</head>
+<body>
+
+<div id="navbar-container"></div>
+
+<main class="page-body">
+
+    <h1 class="page-title">Reagendar Consulta</h1>
+    <p class="page-sub">Escolha uma nova data e horário para sua consulta.</p>
+
+    <div id="consulta-atual"></div>
+
+    <div class="grid">
+        <div class="card">
+            <div class="card-head">
+                <i class="ti ti-calendar"></i> Nova data
+            </div>
+            <div class="cal-header">
+                <button class="cal-nav" id="cal-prev">&#8249;</button>
+                <span class="cal-month" id="cal-month"></span>
+                <button class="cal-nav" id="cal-next">&#8250;</button>
+            </div>
+            <div class="cal-grid" id="cal-grid"></div>
+            <div class="hora-titulo"><i class="ti ti-clock"></i> Horários disponíveis</div>
+            <div class="hora-grid" id="hora-grid"></div>
+        </div>
+
+        <div class="card">
+            <div class="card-head">
+                <i class="ti ti-info-circle"></i> Resumo do reagendamento
+            </div>
+            <div class="info-card">
+                <div class="info-item">
+                    <div class="info-label">Consulta atual</div>
+                    <div class="info-valor" id="resumo-atual-data"></div>
+                    <div class="info-valor-sub" id="resumo-atual-hora"></div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Nova data selecionada</div>
+                    <div class="info-valor" id="resumo-nova-data">Nenhuma data selecionada</div>
+                    <div class="info-valor-sub" id="resumo-nova-hora"></div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Local</div>
+                    <div class="info-valor" id="resumo-local"></div>
+                    <div class="info-valor-sub" id="resumo-endereco"></div>
+                </div>
+                <div class="aviso">
+                    <i class="ti ti-alert-circle"></i>
+                    Ao reagendar, sua consulta anterior será cancelada automaticamente. <br>
+                    Caso o cancelamento seja feito com mais de 24h de antecedência, você receberá 10 Care Coins.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="resumo-box">
+        <div class="resumo-info">
+            <div class="resumo-label">Consulta</div>
+            <div class="resumo-valor" id="barra-consulta"></div>
+        </div>
+        <div class="resumo-info">
+            <div class="resumo-label">Nova data</div>
+            <div class="resumo-valor" id="barra-data">Selecione data e horário</div>
+        </div>
+        <div class="btn-row">
+            <button class="btn-voltar" id="btn-voltar">Voltar</button>
+            <button class="btn-confirmar" id="btn-confirmar">Confirmar reagendamento →</button>
+        </div>
+    </div>
+
+</main>
+
+<script src="../js/navbar.js"></script>
+<script src="../js/reagendamento.js"></script>
+</body>
+</html>
