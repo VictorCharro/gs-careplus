@@ -5,6 +5,8 @@ function initNavbar() {
   const btnHome = document.getElementById('btn-home');
   const btnRecompensas = document.getElementById('btn-recompensas');
   const btnLembretes = document.getElementById('btn-minhas-consultas');
+  const dropdownBtn = document.getElementById('dropdown-btn');
+  const dropdownMenu = document.getElementById('dropdown-menu');
 
   let zoomLevel = 1;
 
@@ -46,8 +48,23 @@ function initNavbar() {
     });
   }
 
+  if (dropdownBtn && dropdownMenu) {
+    dropdownBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      dropdownMenu.classList.toggle('open');
+    });
+
+    document.addEventListener('click', () => {
+      dropdownMenu.classList.remove('open');
+    });
+
+    dropdownMenu.addEventListener('click', (e) => {
+      e.stopPropagation();
+    });
+  }
+
   const currentPage = window.location.pathname.split('/').pop();
-  
+
   if (currentPage === 'cancelamento.html' && btnCancelar) {
     btnCancelar.classList.add('navbar-action-bold');
   } else if (currentPage === 'recompensas.html' && btnRecompensas) {

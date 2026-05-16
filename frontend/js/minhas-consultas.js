@@ -16,7 +16,7 @@ const consultas = {
       prazo: 'Em 3 dias',
       prazoTipo: 'badge-blue',
       icone: '🩺',
-      iconeTipo: 'icone-blue',
+      iconeTipo: 'icone-gray',
     },
     {
       id: 2,
@@ -27,7 +27,7 @@ const consultas = {
       prazo: 'Em 6 dias',
       prazoTipo: 'badge-orange',
       icone: '❤️',
-      iconeTipo: 'icone-red',
+      iconeTipo: 'icone-gray',
     },
     {
       id: 3,
@@ -132,7 +132,7 @@ function confirmarPresenca(c) {
 }
 
 function reagendarConsulta(c) {
-  window.location.href = `agendamento.html?id=${c.id}`;
+  window.location.href = `reagendamento.html?id=${c.id}`;
 }
 
 function cancelarConsulta(c) {

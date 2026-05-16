@@ -111,12 +111,7 @@ html, body {
   font-size: 12px;
   text-decoration: none;
   font-weight: 500;
-  transition: opacity 0.2s;
   white-space: nowrap;
-}
-
-.phone-number:hover {
-  opacity: 0.8;
 }
 
 .profile-btn {
@@ -226,6 +221,112 @@ html, body {
   opacity: 0.7;
 }
 
+.home-img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.dropdown-wrapper {
+  position: relative;
+}
+
+.dropdown-btn {
+  background: transparent;
+  border: 2px solid #003366;
+  border-radius: 20px;
+  color: #003366;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 5px 14px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.dropdown-btn:hover {
+  background: #003366;
+  color: #fff;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  background: #fff;
+  border: 1px solid #dde8f4;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  min-width: 240px;
+  z-index: 1100;
+  overflow: hidden;
+}
+
+.dropdown-menu.open {
+  display: block;
+}
+
+.dropdown-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+}
+
+.dropdown-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.dropdown-nome {
+  font-size: 14px;
+  font-weight: 700;
+  color: #003366;
+}
+
+.dropdown-plano {
+  font-size: 12px;
+  color: #4a6080;
+}
+
+.dropdown-divider {
+  height: 1px;
+  background: #dde8f4;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 16px;
+  font-size: 13px;
+  color: #003366;
+  text-decoration: none;
+  transition: background 0.15s;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.dropdown-item i {
+  font-size: 16px;
+  color: #0066cc;
+}
+
+.dropdown-item:hover {
+  background: #eef4fb;
+}
+
+.dropdown-sair {
+  color: #c0392b;
+}
+
+.dropdown-sair i {
+  color: #c0392b;
+}
+
 @media (max-width: 992px) {
   .navbar-contact {
     display: none;
@@ -259,9 +360,12 @@ html, body {
     gap: 16px;
   }
 }
-.home-img {
-  width: 30px;
-  height: 30px;
-  object-fit: contain;
-  filter: brightness(0) invert(1);
+.navbar-top-right .dropdown-wrapper {
+  position: relative;
+}
+
+.navbar-top-right .dropdown-menu {
+  left: auto;
+  right: 0;
+  top: calc(100% + 8px);
 }
