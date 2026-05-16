@@ -1,0 +1,381 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background: #eef4fb;
+    min-height: 100vh;
+}
+
+.dashboard {
+    height: calc(100vh - 48px - 80px);
+}
+
+.home-banner {
+    position: relative;
+    overflow: hidden;
+    background: #00335b;
+    height: 100%;
+}
+
+#carousel-banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.item {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: inset 500px 0 400px 20px rgba(255,255,255,0.92);
+    transform: translateX(100%);
+    transition: transform 0.6s ease;
+}
+
+.item.active {
+    transform: translateX(0);
+}
+
+.item.out-left {
+    transform: translateX(-100%);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.columns {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.banner-home-description {
+    padding-left: 8%;
+    padding-top: 8%;
+    max-width: 480px;
+}
+
+.banner-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #00335b;
+    line-height: 1.25;
+    margin-bottom: 16px;
+}
+
+.banner-content {
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+.btn-banner {
+    display: inline-block;
+    background: #003366;
+    color: #fff;
+    border-radius: 4px;
+    padding: 11px 28px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.btn-banner:hover {
+    background: #0066cc;
+}
+
+.stepper {
+    position: absolute;
+    z-index: 10;
+    left: 28px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.play-carrousel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.play {
+    width: 34px;
+    height: 34px;
+    position: relative;
+    cursor: pointer;
+}
+
+.play svg {
+    transform: rotate(-90deg);
+    cursor: pointer;
+}
+
+.bar {
+    stroke: #00335b;
+    stroke-width: 3px;
+    transition: stroke-dashoffset 0.1s linear;
+}
+
+.steps {
+    list-style: none;
+    padding: 0;
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.step {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #f1efeb;
+    cursor: pointer;
+}
+
+.step.active {
+    background: #00335b;
+}
+
+.right-panel {
+    background: #eef4fb;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.saldo-bar {
+    background: #003366;
+    color: #fff;
+    padding: 16px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+.saldo-label {
+    font-size: 12px;
+    color: #aac8f0;
+    margin-bottom: 2px;
+}
+
+.saldo-valor {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.saldo-icon {
+    width: 44px;
+    height: 44px;
+}
+
+.saldo-plano {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.saldo-right {
+    text-align: right;
+}
+
+.quick-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 14px;
+    padding: 18px 24px 0;
+    flex-shrink: 0;
+}
+
+.qcard {
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #dde8f4;
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+
+.qcard:hover {
+    box-shadow: 0 4px 16px rgba(0,102,204,0.12);
+}
+
+.qcard-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.qcard-blue   { background: #daeefb; }
+.qcard-orange { background: #fde8cc; }
+.qcard-green  { background: #d4f0e0; }
+
+.qcard-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #1a2e4a;
+}
+
+.qcard-sub {
+    font-size: 11px;
+    color: #6a7f96;
+}
+
+.qcard-badge {
+    display: inline-block;
+    border-radius: 20px;
+    padding: 2px 10px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-top: 4px;
+    width: fit-content;
+}
+
+.badge-blue   { background: #daeefb; color: #0066cc; }
+.badge-orange { background: #fde8cc; color: #b25800; }
+.badge-green  { background: #d4f0e0; color: #1a7a45; }
+
+.proximas-section {
+    padding: 16px 24px 0;
+    flex: 1;
+    overflow: hidden;
+}
+
+.section-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a2e4a;
+    margin-bottom: 10px;
+}
+
+.consulta-mini {
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #dde8f4;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.mini-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    flex-shrink: 0;
+}
+
+.mini-titulo {
+    font-size: 12px;
+    font-weight: 700;
+    color: #1a2e4a;
+}
+
+.mini-data {
+    font-size: 11px;
+    color: #6a7f96;
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+.mini-img {
+    width: 13px;
+    height: 13px;
+    vertical-align: middle;
+}
+
+.mini-badge {
+    margin-left: auto;
+    border-radius: 20px;
+    padding: 3px 12px;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.coins-banner {
+    margin: 14px 24px 16px;
+    background: #1a2e4a;
+    border-radius: 10px;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.coins-img {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+}
+
+.coins-text {
+    flex: 1;
+}
+
+.coins-label {
+    font-size: 11px;
+    color: #aac8f0;
+    margin-bottom: 2px;
+}
+
+.coins-val {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.coins-cta {
+    background: #0066cc;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 9px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: background 0.2s;
+}
+
+.coins-cta:hover {
+    background: #0052a3;
+}
