@@ -75,9 +75,9 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 220px);
   grid-auto-rows: auto;
-  column-gap: 56px;
-  row-gap: 48px;
-  gap: 56px;
+  column-gap: 64px;
+  row-gap: 60px;
+  gap: 64px;
   justify-content: flex-start; /* align cards individually from the left like Cancelamento */
 }
 .reward-card {
@@ -180,7 +180,7 @@ body {
     margin-left: 30px;
   }
   .cards-grid {
-    gap: 42px;
+    gap: 48px;
     grid-template-columns: repeat(3, 180px);
     justify-content: flex-start;
   }
@@ -197,7 +197,7 @@ body {
     margin: 0 auto 50px auto;
   }
   .cards-grid {
-    gap: 28px;
+    gap: 36px;
     grid-template-columns: repeat(2, 160px);
     justify-content: flex-start;
   }
@@ -254,7 +254,7 @@ body {
     font-size: 0.9rem;
   }
   .cards-grid {
-    gap: 20px;
+    gap: 24px;
     grid-template-columns: repeat(1, 140px);
     justify-content: flex-start;
   }
