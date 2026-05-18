@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f8fafb;
+}
+
+.main-agendamento {
+    background-color: #F0F8FC;
+    padding: 40px 5%;
+    font-family: 'Montserrat', sans-serif;
+    color: #036;
+}
+
+.titulo-pagina {
+    max-width: 1000px;
+    margin: 0 auto 30px auto;
+    font-size: 1.8rem;
+}
+
+.formulario-agendamento {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.card-conteudo {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 35px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.card-conteudo.dados-pessoais {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.grupo-campo h2 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.input-caixa {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #036;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #333;
+    background-color: transparent;
+    font-family: inherit;
+    outline: none;
+    transition: box-shadow 0.3s;
+}
+
+.input-caixa:focus {
+    box-shadow: 0 0 0 2px rgba(0, 51, 102, 0.3);
+}
+
+.linha-inputs {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.container-botoes-rodape {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.btn-acao {
+    background-color: #036;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-acao:hover {
+    background-color: #004080;
+    transform: translateY(-2px);
+}
+
+.calendario-widget {
+    border: 1px solid #036;
+    border-radius: 8px;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.mes-ano {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.seletor-dias {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-seta {
+    background-color: #036;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.dia-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #036;
+    transition: all 0.3s ease;
+}
+
+.dia-semana { font-size: 0.9rem; }
+.dia-numero { font-size: 1.1rem; font-weight: 600; }
+
+.dia-item:hover {
+    background-color: #036;
+    color: white;
+}
+
+.dia-item.selecionado {
+    background-color: #036;
+    color: white;
+}
+
+
+.botoes-horario {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-hora {
+    background-color: white;
+    border: 1px solid #036;
+    color: #036;
+    padding: 10px 30px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-hora:hover, .btn-hora.selecionado {
+    background-color: #036;
+    color: white;
+}

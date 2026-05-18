@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/agendamento.css" />
+</head>
+<body>
+
+<div id="navbar-container"></div>
+
+<main class="main-agendamento">
+
+    <h1 class="titulo-pagina">Agende sua consulta</h1>
+
+    <form action="" method="POST" class="formulario-agendamento">
+
+        <section class="card-conteudo">
+            <div class="grupo-campo">
+                <h2>Escolha o local mais próximo de você</h2>
+                <select name="local" id="local" class="input-caixa">
+                    <option value="" disabled selected>Selecione o local</option>
+                    <option value="unidade1">Unidade Centro</option>
+                </select>
+            </div>
+
+            <div class="grupo-campo">
+                <h2>Procedimento</h2>
+                <select name="procedimento" id="procedimento" class="input-caixa">
+                    <option value="clinico" selected>Clinico</option>
+                    <option value="pediatria">Pediatria</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="card-conteudo">
+            <div class="grupo-campo data-consulta">
+                <h2>Data da consulta</h2>
+
+                <div class="calendario-widget">
+                    <h3 class="mes-ano">Outubro 2026</h3>
+                    <div class="seletor-dias">
+                        <button type="button" class="btn-seta" aria-label="Voltar semana">&lt;</button>
+
+                        <div class="dia-item">
+                            <span class="dia-semana">Seg</span>
+                            <span class="dia-numero">12</span>
+                        </div>
+                        <div class="dia-item">
+                            <span class="dia-semana">Ter</span>
+                            <span class="dia-numero">13</span>
+                        </div>
+                        <div class="dia-item selecionado">
+                            <span class="dia-semana">Qua</span>
+                            <span class="dia-numero">14</span>
+                        </div>
+                        <div class="dia-item">
+                            <span class="dia-semana">Qui</span>
+                            <span class="dia-numero">15</span>
+                        </div>
+                        <div class="dia-item">
+                            <span class="dia-semana">Sex</span>
+                            <span class="dia-numero">16</span>
+                        </div>
+                        <div class="dia-item">
+                            <span class="dia-semana">Sab</span>
+                            <span class="dia-numero">17</span>
+                        </div>
+
+                        <button type="button" class="btn-seta" aria-label="Avançar semana">&gt;</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grupo-campo horarios-disponiveis">
+                <h2>Horários disponíveis</h2>
+                <div class="botoes-horario">
+                    <button type="button" class="btn-hora selecionado">10:20</button>
+                    <button type="button" class="btn-hora">11:50</button>
+                    <button type="button" class="btn-hora">13:40</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="card-conteudo dados-pessoais">
+            <h2>Seus dados</h2>
+            <div class="linha-inputs">
+                <input type="text" name="nome" placeholder="Nome" class="input-caixa">
+                <input type="text" name="cpf" placeholder="CPF" class="input-caixa">
+                <input type="email" name="email" placeholder="Email" class="input-caixa">
+                <input type="tel" name="telefone" placeholder="Tel" class="input-caixa">
+            </div>
+
+            <div class="container-botoes-rodape">
+                <button type="button" class="btn-acao" onclick="window.location.href='minhas-consultas.html'">Confirmar agendamento</button>
+            </div>
+
+        </section>
+
+    </form>
+</main>
+<script src="../js/navbar.js"></script>
+<script>
+    fetch('../html/navbar.html')
+        .then(res => res.text())
+        .then(html => {
+            document.getElementById('navbar-container').innerHTML = html;
+            initNavbar();
+        });
+</script>
+</body>
+</html>

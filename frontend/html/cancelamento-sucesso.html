@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancelamento</title>
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/cancelamento-sucesso.css" />
+</head>
+<body>
+
+<div id="navbar-container"></div>
+
+<main>
+    <section>
+        <div class="section_main">
+            <div class="parabenizacao">
+                <img src="../imagens/check-azul.png" alt="">
+                <h1 class="parabens">Parabéns!</h1>
+                <p>João da Silva</p>
+            </div>
+
+            <div class="mensagem">
+                <p class="mensagem_principal">Você cancelou sua consulta com <strong>24h</strong> de antecedência<br>e recebeu
+                </p>
+                <p class="mensagem_carepoints"><strong class="destaque">+</strong> <img src="../imagens/care-coins.png" alt="" style="width: 40px; height: 40px;"> 50 Care Coins</p>
+            </div>
+
+            <div class="cards">
+                <div class="card_1">
+                    <p>Continue assim!<br>
+                        Cancelar/Remarcar com antecedência
+                        ajuda outros pacientes e
+                        ainda rende Care Coins para você!</p>
+                </div>
+
+                <div class="card_2">
+                    <img src="../imagens/care-coins.png" alt="" style="width: 80px; height: 80px;">
+                    <div class="card_2_text">
+                        <p>Seu saldo:</p>
+                        <p><strong>899</strong> Care Coins</p>
+                    </div>
+                </div>
+
+                <div class="card_3">
+                    <a href="recompensas.html">Resgatar Recompensas</a>
+                    <a href="minhas-consultas.html">Retornar</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</main>
+<script src="../js/navbar.js"></script>
+<script>
+    fetch('../html/navbar.html')
+        .then(res => res.text())
+        .then(html => {
+            document.getElementById('navbar-container').innerHTML = html;
+            initNavbar();
+        });
+</script>
+</body>
+</html>
