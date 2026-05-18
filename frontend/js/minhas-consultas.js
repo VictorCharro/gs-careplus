@@ -89,7 +89,7 @@ function renderLista(tab) {
 
   dados.forEach(c => {
     document.querySelector(`#card-${c.id} .btn-confirmar`)
-        ?.addEventListener('click', () => confirmarPresenca(c));
+        ?.addEventListener('click', (e) => confirmarPresenca(c, e.target));
     document.querySelector(`#card-${c.id} .btn-reagendar`)
         ?.addEventListener('click', () => reagendarConsulta(c));
     document.querySelector(`#card-${c.id} .btn-cancelar`)
@@ -127,8 +127,12 @@ function montaCard(c, tab) {
   `;
 }
 
-function confirmarPresenca(c) {
-  window.location.href = `comparecimento.html?id=${c.id}`;
+function confirmarPresenca(c, button) {
+  button.textContent = "Presença confirmada";
+  button.style.backgroundColor = "#28a745";
+  button.style.color = "white";
+  button.style.border = "none";
+  button.disabled = true;
 }
 
 function reagendarConsulta(c) {
@@ -139,7 +143,7 @@ function cancelarConsulta(c) {
   const ok = confirm(`Cancelar consulta?\n${c.titulo} — ${c.data}`);
   if (!ok) return;
   consultas.proximas = consultas.proximas.filter(x => x.id !== c.id);
-  renderLista(tabAtiva);
+  window.location.href = 'cancelamento-sucesso.html';
 }
 
 document.addEventListener('DOMContentLoaded', () => {

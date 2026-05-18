@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
     iniciarAutoplay();
 
     document.getElementById('btn-lembretes')?.addEventListener('click', () => {
-        window.location.href = 'lembretes.html';
+        window.location.href = 'minhas-consultas.html';
     });
 
     document.getElementById('btn-agendar')?.addEventListener('click', () => {

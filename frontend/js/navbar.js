@@ -5,6 +5,7 @@ function initNavbar() {
   const btnHome = document.getElementById('btn-home');
   const btnRecompensas = document.getElementById('btn-recompensas');
   const btnLembretes = document.getElementById('btn-minhas-consultas');
+  const btnAgendar = document.getElementById('btn-agendar');
   const dropdownBtn = document.getElementById('dropdown-btn');
   const dropdownMenu = document.getElementById('dropdown-menu');
 
@@ -48,6 +49,12 @@ function initNavbar() {
     });
   }
 
+  if (btnAgendar) {
+    btnAgendar.addEventListener('click', () => {
+      window.location.href = 'agendamento.html';
+    });
+  }
+
   if (dropdownBtn && dropdownMenu) {
     dropdownBtn.addEventListener('click', (e) => {
       e.stopPropagation();
@@ -71,5 +78,7 @@ function initNavbar() {
     btnRecompensas.classList.add('navbar-action-bold');
   } else if (currentPage === 'minhas-consultas.html' && btnLembretes) {
     btnLembretes.classList.add('navbar-action-bold');
+  } else if (currentPage === 'agendamento.html' && btnAgendar) {
+    btnAgendar.classList.add('navbar-action-bold');
   }
 }
